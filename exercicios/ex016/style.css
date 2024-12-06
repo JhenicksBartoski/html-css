@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'SF Pro Text', sans-serif;
+    text-align: justify;
+}
+
+h1, h2 {
+    opacity: .85;
+}
+
+#Título {
+    opacity: 1;
+    text-align: center;
+}
+
+.material::before {
+    content: "";
+    padding: 0px 6px 0px 0px;
+    background-color: #1f88d9;
+    border-radius: 99px;
+    margin-right: 10px;
+}
+
+.basico {
+    color: #1a422b;
+}
+.medio {
+    color: #ffcb0e;
+}
+.avancado {
+    color: #693934;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia dinâmica</title>
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <style>*{font-family: 'SF Pro Text'}</style>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tentar abrir o arquivo abaixo no navegador com diferentes tamanhos de janela</p>
+    <p>A <strong>loira</strong> aparece em telas grandes, o <strong>man</strong> em telas médias e o <strong>vegeta testudo</strong> em telas pequenas</p>
+
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/testa.jpg" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/man.jpg" type="image/png">
+        <img src="imagens/loira.jpg" alt="Imagem flexível GRANDE">
+    </picture>
+
+    <h1>Áudio</h1>
+    <p>Para reproduzir algum arquivo mp3 adicionado à pasta do site, usa a tag audio com a subtag autoplay para que começe a tocar assim q entrar no site</p>
+    <audio src="midia/what-is-this-feeling.mp3" controls></audio>
+    <p>Tipos de arquivos aceitos pra audio são MP3, WAV e OGG</p>
+    <audio preload="none" controls>
+        <source src="midia/popular.mp3" type="audio/mpeg">
+        <source src="midia/popular.ogg" type="audio/mpeg">
+        <source src="midia/popular.wav" type="audio/mpeg">
+        <p>seu navegador não consegue reproduzir audio</p>
+        <a href="midia/popular.mp3">Clique para baixar o arquivo</a>
+    </audio>
+</body>
+</html>

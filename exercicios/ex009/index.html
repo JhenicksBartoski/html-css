@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas</title>
+</head>
+<body>
+    <h1>2 tipos iniciais</h1>
+    <h2>lista ordenada</h2>
+    <p>usa a tag ol pra lista ordenada</p>
+    <ol type="A">
+        <li>não fica</li>
+        <li>entre a tag p</li>
+        <li>já fica numerado sozinho</li>
+        porém cada item fica OPCIONALMENTE entre tag li, que automaticamente adiciona a numeração. Pode ser aberto para mantê-la, mas se tirar, perde a numeração por completo
+    </ol>
+    <h2>lista não ordenada</h2>
+    <ul type=square>
+        <li>entre o li também</li>
+        <li>mesmo que não precise ser fechado
+        <li>neste usa bolinhas iniciais são o tipo disc</li>
+        <li>tem square e circle, ou seja, formas geométricas ao invés de números e letras</li>
+    </ul>
+    <h2>juntando listas</h2>
+    <ol>
+        <li>primeira lista</li>
+        <ol type=a>
+            <li>lista dentro de lista com alinhamento (espaçamento da parte esquerda da tela para esclarecer onde cada codigo começa e termina)</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+        <li>segunda lista</li>
+        <ol type=a start=5>
+            <li>primeiro</li>
+            <li>segundo</li>
+            <li>terceiro</li>
+            <li>quarto</li>
+            <li>coloquei mesmo tipo e start=5 pra parecer que é contínua com um título separando</li>
+        </ol>
+    </ol>
+    <h3>lista ordenada junto com desordenada</h3>
+    <ol>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+    </ol>
+    <ol>
+        <ol>
+            <li>01o item</li>
+            <ul>
+                <li>item 1.42</li>
+                <li>item 1.53</li>
+                <li>item 1.64</li>
+            </ul>
+            <li>02o item</li>
+            <li>03o tem</li>
+        </ol>
+    </ol>
+    <p>se segurar alt e clicar numa área no vscode, dá pra digitar em todos os lugares selecionados ao mesmo tempo</p>
+    <h2>lista de definições</h2>
+    <dl>
+    <dt>tag DT</dt>
+    <dd>define o título do que será definido entre o dd</dd>
+    </dl>
+</body>
+</html>

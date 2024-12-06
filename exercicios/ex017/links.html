@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: 'SF Pro Text';
+        }
+        a {
+            text-decoration: none;
+            color: green;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:active {
+            color: orange;
+        }
+        a:hover {
+            color: yellow;
+        }
+        a::after {
+            content: " [link]";
+            text-decoration: none;
+            font-weight: 400;
+            opacity: .5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com">YouTube</a></li>
+        <li><a href="https://www.reddit.com">Reddit</a></li>
+        <li><a href="https://www.x.com/home">Twitter</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'SF Pro Text', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #f0f0f0, #c4c4c4);
+    height: 100%;
+    background-attachment: fixed;
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 8px 16px 0 rgba(0,0,0,.16)
+}
+
+h1 {
+    text-align: center;
+    background-image: transparent;
+    color: #0075cf;
+}
+    h2::before {
+        content: "";
+        background-color: #0075cf;
+        border-radius: 99px;
+        padding: 0px 6px 0px 0px;
+        margin: 0px 12px 0px 0px;
+    }
