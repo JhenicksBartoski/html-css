@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel</title>
     <style>
-        * {
+        body {
             font-family: 'Georgia Pro', 'Georgia', 'Times New Roman', Times, serif;
+            margin: 0px;
+            padding: 0px;
+            min-height: 100vh;
         }
 
         header {
             background-color: black;
             margin: -21px -10px 0px -10px;
             padding: 10px;
+            color: white;
         }
         header > * {
             font-family: 'SF Pro Text', Arial, Helvetica, sans-serif;
@@ -20,22 +24,88 @@
         }
         header > h1 {
             font-size: 2.5em;
-        }
-        header > p > a {
-            text-decoration: none;
+            padding-top: 10px;
+            font-variant: small-caps;
         }
 
-        main{}
+        header > p#milton {
+            margin-top: -10px;
+            padding-bottom: 10px;
+        }
+
+        header > p > a {
+            text-decoration: none;
+            color: white;
+            transition: all linear .2s;
+        }
+        header > p > a:hover {
+            text-decoration: underline;
+            transition: all linear .2s;
+        }
+
+        main{
+            font-size: 2vw;
+        }
+
+        section {
+            padding: 10vh 0;
+            line-height: 2em;
+            padding-left: 50px;
+        }
+
+        section.normal {
+            background-color: white;
+            color: black;
+        }
+
+        section.imagem {
+            background-color: rgba(0,0,0,.5);
+            color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,.25), 0 -1px 8px rgba(0,0,0,.25) inset;
+        }
+
+        section.imagem.joaninha {
+            background-image: url('imagens/background001.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        section.imagem.papel {
+            background-image: url('imagens/background002.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        section.imagem > p {
+            background-color: rgba(0,0,0,.5);
+            width: 350px;
+            padding: 20px 30px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 8px 16px rgba(0,0,0,.16), 0 1px 0 rgba(255,255,255,.1) inset;
+            border-radius: 1px;
+            backdrop-filter: blur(0px);
+        }
 
         footer {
             background-color: black;
             margin: 0px -10px -10px -10px;
             padding: 1px;
+            color: white;
         }
         footer > p {
             font-family: 'SF Pro Text', Arial, Helvetica, sans-serif;
             text-align: center;
             margin: 0px;
+        }
+        footer > p > a {
+            color: white;
+            text-decoration: none;
+            transition: all linear .2s 0ms;
+        }
+        footer > p > a:hover {
+            text-decoration: underline;
+            transition: all linear .2s 0ms;
         }
     </style>
 </head>
@@ -43,11 +113,11 @@
     <header>
         <h1>Cordel Moderno</h1>
         <p>Do capítulo 20 do módulo 3 de HTML5/CSS3 do Cursoemvideo</p>
-        <p><a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Por Milton Duarte</a></p>
+        <p id="milton">Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a></p>
     </header>
 
     <main>
-        <section>
+        <section class="normal">
             <p>
                 Estou ficando cansado <br>
                 Da tal tecnologia <br>
@@ -59,7 +129,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="imagem joaninha">
             <p>
                 Não é mais como era antes <br>
                 É tudo abreviado <br>
@@ -71,7 +141,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="normal">
             <p>
                 Arroba agora não pesa <br>
                 É parte de um endereço <br>
@@ -93,7 +163,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="imagem papel">
             <p>
                 Tenho saudade das cartas <br>
                 Escritas com a própria mão <br>
@@ -105,7 +175,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="normal">
             <p>
                 Agora, escrevo e envio <br>
                 Chegando na mesma hora <br>
