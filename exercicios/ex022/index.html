@@ -11,20 +11,49 @@
             padding: 0;
         }
 
-        table {
-            width: 200px
-            /*border-collapse: collapse; not working*/
+        table.primeira {
+            width: 200px;
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+        table.segunda {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: 600;
+            background-color: lightgray;
+        }
+
+        th, tfoot {
+            border: 1px solid black;
+            background-color: darkgray;
+            color: white;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td {
             border: 1px solid black;
             padding: 4px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <h1>Primeira tabela</h1>
-    <table>
+    <table class="primeira">
         <tr>
             <td>A1</td>
             <td>B1</td>
@@ -41,5 +70,54 @@
             <td>C3</td>
         </tr>
     </table>
+
+    <h2>Tabelas grandes</h2>
+    <p>
+        Anatomia TABLE > THEAD(opcional) > TBODY > TFOOT(opcional)
+    </p>
+    <p>Todos podem conter TR, TD, TH</p>
+
+    <table class="segunda">
+        <caption>
+            População de algumas unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.973.190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.322.692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.219.679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.850.513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.824.665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.229.915</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>000</strong></td>
+        </tfoot>
+    </table>
+
 </body>
 </html>
