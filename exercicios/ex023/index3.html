@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes seguros</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Motivos</h1>
+    <p>Para evitar ataques cross-sites e xfs</p>
+    <iframe src="pag4.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+    <p>Um dos métodos para evitar é adicionar o parâmetro sandbox="sandbox", como acima</p>
+</body>
+</html>
