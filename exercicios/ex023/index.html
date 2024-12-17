@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body {
+            font-family: Aptos, Arial, Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            border-radius: 8px;
+            border: 1px solid black;
+        }
+        iframe.tabela {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com iframes</h1>
+    <p>Servem para adicionar outro documento HTML dentro do atual</p>
+    <p>
+        Por exemplo, 
+        
+        <iframe src="https://www.youtube.com/" frameborder="1"></iframe>
+        
+        aqui está um iframe com frameborder="1".
+    </p>
+    <p>Alguns navegadores podem bloquear iframes por questões de segurança.</p>
+    <p>Outros sites tem proteção para não aparecerem dentro de outros sites, como o Google</p>
+
+    <h2>Páginas internas</h2>
+    <p>Já aqui
+        <iframe src="pag1.html" frameborder="0"><a href="pag1.html">pag1.html</a></iframe>
+        há uma página interna em html
+    </p>
+    <p>Isso seria útil para adicionar as tabelas</p>
+    <p><iframe src="../ex022/tabela5.html" frameborder="0" height="700" width="700" class="tabela"></iframe></p>
+</body>
+</html>
