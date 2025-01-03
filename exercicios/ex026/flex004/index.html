@@ -8,15 +8,30 @@
         div.container {
             background-color: lightgray;
             display: flex;
+            max-width: 1000px;
+            border-radius: 4px;
+            height: 150px;
 
             flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
         }
         div.item {
             background-color: gray;
             border: 1px solid black;
             text-align: center;
             padding: 30px;
-            flex: auto;
+            color: white;
+            transition: transform ease-in-out 103ms, color linear 103ms 123ms, box-shadow ease-out 123ms 83ms;
+            box-shadow: 0 0 0 transparent inset;
+            border-radius: 4px;
+        }
+        div.item:hover {
+            transform: scale(1.15);
+            color: black;
+            box-shadow: 0 -99px lightgray inset, 0 4px 8px rgba(0,0,0,.1);
+            border-radius: 6px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -29,20 +44,6 @@
         <div class="item">Exemplo D</div>
         <div class="item">Exemplo E</div>
         <div class="item">Exemplo F</div>
-        <div class="item">Exemplo G</div>
-        <div class="item">Exemplo H</div>
-        <div class="item">Exemplo I</div>
-        <div class="item">Exemplo J</div>
-        <div class="item">Exemplo K</div>
-        <div class="item">Exemplo L</div>
-        <div class="item">Exemplo M</div>
-        <div class="item">Exemplo N</div>
-        <div class="item">Exemplo O</div>
-        <div class="item">Exemplo P</div>
-        <div class="item">Exemplo Q</div>
-        <div class="item">Exemplo R</div>
-        <div class="item">Exemplo S</div>
-        <div class="item">Exemplo T</div>
     </div>
 </body>
 </html>
