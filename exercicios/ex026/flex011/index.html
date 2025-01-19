@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            background-color: rgba(211, 211, 211, 0.5);
+            display: flex;
+
+            flex-flow: row nowrap;
+        }
+        div.item {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 48px;
+            align-content: center;
+        }
+
+        #itema {
+            flex: 0 1 250px;
+            background-color: bisque;
+            border-radius: 8px 0 0 8px;
+        }
+        #itemb {
+            flex: 2 0 250px;
+            background-color: lightcoral;
+        }
+        #itemc {
+            flex: 1 2 auto;
+            background-color: lightgreen;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox 1</h1>
+    <div class="container">
+        <div class="item" id="itema">Aaaaa</div>
+        <div class="item" id="itemb">Bbbbb</div>
+        <div class="item" id="itemc">Ccccc</div>
+    </div>
+</body>
+</html>
